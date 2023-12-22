@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.4.30"
+    kotlin("jvm") version "1.9.22"
     `java-library`
     `maven-publish`
 }
@@ -8,7 +8,7 @@ group = "us.dragonma"
 version = "1.0.2"
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -25,7 +25,7 @@ java {
 publishing {
     repositories {
         maven {
-            url = uri("$buildDir/repo")
+            url = uri("${layout.buildDirectory}/repo")
         }
     }
     publications {
