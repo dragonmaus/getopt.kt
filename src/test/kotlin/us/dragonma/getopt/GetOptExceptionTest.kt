@@ -11,7 +11,7 @@ class GetOptExceptionTest {
 
     @Test
     fun testConstructor2() {
-        assertFailsWith<GetOptException> { throw GetOptException(message) }
+        assertFailsWith<GetOptException> { throw GetOptException(MESSAGE) }
     }
 
     // @Test
@@ -25,6 +25,6 @@ class GetOptExceptionTest {
     // }
 
     companion object {
-        private const val message = "test message"
+        private const val MESSAGE = "test message"
     }
 }

@@ -1,11 +1,11 @@
 plugins {
-    kotlin("jvm") version "1.9.22"
+    kotlin("jvm") version "2.0.0"
     `java-library`
     `maven-publish`
 }
 
 group = "us.dragonma"
-version = "1.0.2"
+version = "1.0.3"
 
 repositories {
     mavenCentral()
